@@ -36,9 +36,9 @@ Use the following default accounts for testing:
 ## Setup Instructions
 
 
-Follow these steps to run the project in herald server:
+### Follow these steps to run the project in herald server:###
 
-### Server Requirements
+## Server Requirements
 - Herald Server Credentials
 - PHP 8.0 or higher
 - MySQL / MariaDB Database
@@ -46,7 +46,7 @@ Follow these steps to run the project in herald server:
 - File upload permission enabled (for student photos)
 
 
-### Deployment Steps
+## Deployment Steps
 
 1. **Upload Project Folder into server**
    - Log in to server by using crendentials
@@ -73,9 +73,9 @@ Follow these steps to run the project in herald server:
 
 
 
-Follow these steps to run the project locally:
+### Follow these steps to run the project locally:###
 
-### 1. Requirements
+## Server Requirements
 - XAMPP / WAMP Server
 - PHP 8+
 - MySQL Database
@@ -83,7 +83,7 @@ Follow these steps to run the project locally:
 
 
 
-### 2. Installation Steps
+## 2. Installation Steps
 
 1. Extract the project folder into:
 2. Start Apache and MySQL from the XAMPP Control Panel.
