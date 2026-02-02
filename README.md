@@ -36,7 +36,7 @@ Use the following default accounts for testing:
 ## Setup Instructions
 
 
-### Follow these steps to run the project in herald server:###
+### Follow these steps to run the project in herald server:
 
 ## Server Requirements
 - Herald Server Credentials
@@ -73,7 +73,7 @@ Use the following default accounts for testing:
 
 
 
-### Follow these steps to run the project locally:###
+### Follow these steps to run the project locally:
 
 ## Server Requirements
 - XAMPP / WAMP Server
@@ -83,7 +83,7 @@ Use the following default accounts for testing:
 
 
 
-## 2. Installation Steps
+## Installation Steps
 
 1. Extract the project folder into:
 2. Start Apache and MySQL from the XAMPP Control Panel.
