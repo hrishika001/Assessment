@@ -1,10 +1,16 @@
 <?php
 // config/db.php
-// Update these for your server:
+// local host credentials:
 $DB_HOST = "localhost";
 $DB_NAME = "student_portal";
 $DB_USER = "root";
 $DB_PASS = "";
+
+//Server Credentials:
+//$DB_HOST = "localhost";
+//$DB_NAME = "NP03CY4S250021";
+//$DB_USER = "NP03CY4S250021";
+//$DB_PASS = "RTnWTjiGKY";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 

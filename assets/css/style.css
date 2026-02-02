@@ -1,4 +1,4 @@
-/* Modern University Portal Theme */
+
 :root{
   --card: rgba(255,255,255,.92);
   --card2: rgba(255,255,255,.82);
@@ -278,7 +278,7 @@ textarea{min-height:120px; resize:vertical}
 .announce-body{line-height:1.6}
 
 
-/* Admin dashboard layout (grouped sections) */
+/* Admin dashboard */
 .dash{max-width:var(--max);margin:0 auto;padding:22px 16px 34px}
 .dash-group{margin-top:18px}
 .dash-h2{margin:0 0 12px;font-size:18px;letter-spacing:.2px}
@@ -329,7 +329,7 @@ textarea{min-height:120px; resize:vertical}
 }
 
 
-/* ---------- Landing page (extremely attractive) ---------- */
+
 .landing{min-height:calc(100vh - 0px); position:relative; padding:42px 16px 80px;}
 .landing-bg{
   position:absolute; inset:0;
@@ -405,7 +405,6 @@ textarea{min-height:120px; resize:vertical}
 
 
 
-/* GLASS_HEADER_V1 */
 .topbar{
   border-bottom:1px solid rgba(255,255,255,.16);
   box-shadow: 0 10px 30px rgba(0,0,0,.18);
@@ -416,7 +415,7 @@ textarea{min-height:120px; resize:vertical}
 
 .req{color:#ffd1dc;font-weight:900;}
 
-/* Teacher Announcements spacing */
+/* Teacher Announcements*/
 .form .field { margin-bottom: 14px; }
 .grid2 { display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 @media (max-width: 860px){ .grid2 { grid-template-columns: 1fr; } }

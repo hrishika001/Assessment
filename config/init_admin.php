@@ -1,6 +1,6 @@
 <?php
 // Auto-creates the default admin if not present.
-// (Credentials are written only in README.md, never shown in UI.)
+// (Credentials are written only in README.md )
 function ensure_default_admin(mysqli $conn): void {
   $email = 'admin@portal.com';
   $stmt = $conn->prepare('SELECT id FROM users WHERE email=? LIMIT 1');

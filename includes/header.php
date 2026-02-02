@@ -1,9 +1,6 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) { session_start(); }
 
-// $base_url must be set by the page:
-//  - pages in /public/ use: $base_url = './';
-//  - pages in /public/admin|teacher|student use: $base_url = '../';
 $base_url = $base_url ?? './';
 $asset_url = $asset_url ?? ($base_url . '../assets/');
 
@@ -22,7 +19,7 @@ $name = $user['name'] ?? '';
 </head>
 <body>
 
-<!-- Background layer (glass effect) -->
+<!-- Background layer-->
 <div class="bg" aria-hidden="true"></div>
 
 <header class="topbar">

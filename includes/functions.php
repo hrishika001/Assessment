@@ -5,9 +5,9 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-/* ================================
-   BASIC HELPERS
-================================ */
+
+  // BASIC HELPERS
+
 
 function e($v): string {
     return htmlspecialchars((string)$v, ENT_QUOTES, 'UTF-8');
@@ -23,9 +23,8 @@ function redirect(string $to): void {
 }
 
 
-/* ================================
-   AUTH + ROLE PROTECTION
-================================ */
+
+   //AUTH + ROLE PROTECTION
 
 function require_login(string $base = '../'): void {
     if (!is_logged_in()) {
@@ -54,9 +53,8 @@ function require_any_role(array $roles, string $base = '../'): void {
 }
 
 
-/* ================================
-   DASHBOARD REDIRECT
-================================ */
+  // DASHBOARD REDIRECT
+
 
 function redirect_dashboard(string $base = ''): void {
     if (!is_logged_in()) return;
@@ -78,9 +76,9 @@ function redirect_dashboard(string $base = ''): void {
 }
 
 
-/* ================================
-   FLASH MESSAGES
-================================ */
+
+   //FLASH MESSAGES
+
 
 function set_flash(string $type, string $msg): void {
     $_SESSION['flash'] = ['type' => $type, 'msg' => $msg];
@@ -98,9 +96,8 @@ function flash(): void {
 }
 
 
-/* ================================
-   CSRF SECURITY
-================================ */
+  // CSRF SECURITY
+
 
 function csrf_token(): string {
     if (empty($_SESSION['csrf'])) {
@@ -122,9 +119,9 @@ function verify_csrf(): void {
 }
 
 
-/* ================================
-   UPLOAD HELPERS (ALL FIXED)
-================================ */
+
+  // UPLOAD HELPERS
+
 
 function _ensure_uploads_dir(): string {
     $dir = __DIR__ . '/../public/uploads/';
@@ -161,9 +158,9 @@ function _save_upload(?array $file, string $prefix, array $allowed, string $fall
 }
 
 
-/* ================================
-   SPECIFIC UPLOAD FUNCTIONS
-================================ */
+
+  // SPECIFIC UPLOAD FUNCTIONS
+
 
 function save_profile_photo($file) {
     return _save_upload($file, "student",

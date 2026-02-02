@@ -5,7 +5,7 @@
     navToggle.addEventListener('click', () => nav.classList.toggle('is-open'));
   }
 
-  // show/hide password
+  // show/hide password-code
   document.querySelectorAll('[data-toggle-password]').forEach(btn => {
     btn.addEventListener('click', () => {
       const id = btn.getAttribute('data-toggle-password');
@@ -17,13 +17,13 @@
     });
   });
 
-  // auto-dismiss alerts
+  // auto-dismiss alerts-code
   document.querySelectorAll('[data-autodismiss="1"]').forEach(el => {
     setTimeout(() => { el.style.opacity = '0'; el.style.transform='translateY(-6px)'; }, 3500);
     setTimeout(() => { el.remove(); }, 4200);
   });
 
-  // confirm delete buttons
+  // confirm delete buttons-code
   document.querySelectorAll('[data-confirm]').forEach(el => {
     el.addEventListener('click', (e) => {
       const msg = el.getAttribute('data-confirm') || 'Are you sure?';
